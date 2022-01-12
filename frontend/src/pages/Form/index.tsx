@@ -1,4 +1,5 @@
 import './styles.css';
+import {Link} from "react-router-dom";
 
 function Form() {
 
@@ -15,6 +16,7 @@ function Form() {
             <img className="dsmovie-movie-card-image" src={movie.image} alt={movie.title} />
             <div className="dsmovie-card-bottom-container">
                 <h3>{movie.title}</h3>
+                
                 <form className="dsmovie-form">
                     <div className="form-group dsmovie-form-group">
                         <label htmlFor="email">Informe seu email</label>
@@ -34,7 +36,12 @@ function Form() {
                         <button type="submit" className="btn btn-primary dsmovie-btn">Salvar</button>
                     </div>
                 </form >
+                
+                <Link to="/">
                 <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+                </Link>
+
+                
             </div >
         </div >
     );
