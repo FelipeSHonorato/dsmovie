@@ -51,7 +51,3 @@
 .dsmovie-flip-horizontal {
     transform: rotate(180deg);
 }
-
-.dsmovie-card-bottom-container {
-    background-color: #e9ecef6b;
-}
